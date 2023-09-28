@@ -5,7 +5,13 @@ export default class Content { //поле с подборкой видео
         private videos: Video[] = [],
         private isActive: boolean = false, // выбранная категория
         private readonly el: HTMLDivElement = document.createElement('div')
-    ){}
+    ){
+
+    }
+
+    get videoList(){
+        return this.videos
+    }
 
     get element(){
         return this.el
@@ -17,12 +23,16 @@ export default class Content { //поле с подборкой видео
 
     init(){}
     render(){
-        this.el.classList.add('category')
+        // this.el.classList.add('category')
 
-        const icon = document.createElement('div')
-        const name = document.createElement('div')
+        // const icon = document.createElement('div')
+        // const name = document.createElement('div')
 
-        this.el.appendChild(icon)
-        this.el.appendChild(name)
+        // name.innerHTML = 
+
+        // this.el.appendChild(icon)
+        // this.el.appendChild(name)
+
+
     }
 }
